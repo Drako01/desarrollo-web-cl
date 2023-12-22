@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./css/navbar.css">
+  </head>
+  <body>
+    <header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#">
+				<img src="data:image/jpeg;base64,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" alt="">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="productos.html">Products</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Dropdown link
+					</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="#">Action</a></li>
+					  <li><a class="dropdown-item" href="#">Another action</a></li>
+					  <li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+    </header>
+    <main>
+      <section class="titulo">
+        <h1 class="titulo__h1">Nuestra Verduleria</h1>
+        <h2 class="titulo__transformado">¡¡¡Oferta en Peras!!!</h2>
+      </section>
+
+      <section class="container">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://verdepuro.com.ar/wp-content/uploads/2020/04/39.png"
+            class="card-img-top"
+            alt="Manzana"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Manzana</h5>
+            <p class="card-text">
+              Es una manzana roja apetitosa, jugosa y muy rica. Me gusta
+              desayunar con manzanas.
+            </p>
+            <a href="#" class="btn btn-danger">Comprar</a>
+          </div>
+        </div>
+		<div class="card" style="width: 18rem">
+			<img
+			  src="https://verdepuro.com.ar/wp-content/uploads/2020/04/39.png"
+			  class="card-img-top"
+			  alt="Manzana"
+			/>
+			<div class="card-body">
+			  <h5 class="card-title">Manzana</h5>
+			  <p class="card-text">
+				Es una manzana roja apetitosa, jugosa y muy rica. Me gusta
+				desayunar con manzanas.
+			  </p>
+			  <a href="#" class="btn btn-warning ">Comprar</a>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem">
+			<img
+			  src="https://verdepuro.com.ar/wp-content/uploads/2020/04/39.png"
+			  class="card-img-top"
+			  alt="Manzana"
+			/>
+			<div class="card-body">
+			  <h5 class="card-title">Manzana</h5>
+			  <p class="card-text">
+				Es una manzana roja apetitosa, jugosa y muy rica. Me gusta
+				desayunar con manzanas.
+			  </p>
+			  <a href="#" class="btn btn-primary">Comprar</a>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem">
+			<img
+			  src="https://verdepuro.com.ar/wp-content/uploads/2020/04/39.png"
+			  class="card-img-top"
+			  alt="Manzana"
+			/>
+			<div class="card-body">
+			  <h5 class="card-title">Manzana</h5>
+			  <p class="card-text">
+				Es una manzana roja apetitosa, jugosa y muy rica. Me gusta
+				desayunar con manzanas.
+			  </p>
+			  <a href="#" class="btn btn-primary">Comprar</a>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem">
+			<img
+			  src="https://verdepuro.com.ar/wp-content/uploads/2020/04/39.png"
+			  class="card-img-top"
+			  alt="Manzana"
+			/>
+			<div class="card-body">
+			  <h5 class="card-title">Manzana</h5>
+			  <p class="card-text">
+				Es una manzana roja apetitosa, jugosa y muy rica. Me gusta
+				desayunar con manzanas.
+			  </p>
+			  <a href="#" class="btn btn-primary">Comprar</a>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem">
+			<img
+			  src="https://verdepuro.com.ar/wp-content/uploads/2020/04/39.png"
+			  class="card-img-top"
+			  alt="Manzana"
+			/>
+			<div class="card-body">
+			  <h5 class="card-title">Manzana</h5>
+			  <p class="card-text">
+				Es una manzana roja apetitosa, jugosa y muy rica. Me gusta
+				desayunar con manzanas.
+			  </p>
+			  <a href="#" class="btn btn-primary">Comprar</a>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem">
+			<img
+			  src="https://verdepuro.com.ar/wp-content/uploads/2020/04/39.png"
+			  class="card-img-top"
+			  alt="Manzana"
+			/>
+			<div class="card-body">
+			  <h5 class="card-title">Manzana</h5>
+			  <p class="card-text">
+				Es una manzana roja apetitosa, jugosa y muy rica. Me gusta
+				desayunar con manzanas.
+			  </p>
+			  <a href="#" class="btn btn-primary">Comprar</a>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem">
+			<img
+			  src="https://verdepuro.com.ar/wp-content/uploads/2020/04/39.png"
+			  class="card-img-top"
+			  alt="Manzana"
+			/>
+			<div class="card-body">
+			  <h5 class="card-title">Manzana</h5>
+			  <p class="card-text">
+				Es una manzana roja apetitosa, jugosa y muy rica. Me gusta
+				desayunar con manzanas.
+			  </p>
+			  <a href="#" class="btn btn-primary">Comprar</a>
+			</div>
+		  </div>
+      </section>
+
+      <div class="paralax"></div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__parrafo">
+          <p>
+            Tienda onLine de Verduleria | Todos los derechos Reservados |
+            <a href="https://google.cl" target="_blank">
+              Dessarrollador Alejandro</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

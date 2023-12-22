@@ -9,7 +9,7 @@
     margin-bottom: 100px;
 }
 
-.card{
+.cards{
     width: var(--medium);   
     height: 400px; 
     display: flex;
@@ -74,4 +74,8 @@
     background-color: var(--colour-three);
     color: var(--colour-one);
     box-shadow: none;    
+}
+
+h5.card-title{
+    color: var(--colour-one);
 }

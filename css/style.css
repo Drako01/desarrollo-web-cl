@@ -22,5 +22,8 @@
 /* Contenedor de Galeria */
 @import url(galery.css);
 
+/* Carrousel */
+@import url(carrousel_mio.css);
+
 /* Responsive */
 @import url(responsive.css);

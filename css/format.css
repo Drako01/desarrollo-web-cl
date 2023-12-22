@@ -53,3 +53,7 @@ ul li p {
     color: var(--colour-two);
     line-height: 2rem;
 }
+
+.contacto{
+    height: 80vh;
+}
