@@ -1,0 +1,68 @@
+
+/* Llamar imagen Externa */
+/* .paralax{
+    background-image: url("https://lh3.googleusercontent.com/p/AF1QipP0Jlbw64ftQUA9g8eAg2tozDIMBqr_zyVtB14L=w1080-h608-p-no-v0");
+    height: 608px;
+    background-position:top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+} */
+
+/* Llamar imagen Interna */
+.paralax{
+    background-image: url("../img/fondo.png");
+    height: 608px;
+    background-position:top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.transformaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.cuadrado{
+    width: 50px;
+    height: 50px;
+    background-color: var(--colour-one);
+}
+
+/* Translacion */
+/* .transformado{
+    background-color: var(--colour-five);
+    transform: translate(-20px, -20px);
+} */
+
+/* Rotacion */
+
+/* .transformado{
+    background-color: var(--colour-five);
+    transform: rotate(-30deg);
+} */
+
+/* Escalar */
+.transformado{
+    background-color: var(--colour-five); 
+}
+
+/* 
+.transformado:hover{
+    transform: scale(1.5);
+    border-radius: 4px;
+} */
+
+
+/* Sesgado */
+/* .transformado:hover{
+    transform: skew(20deg , 10deg);
+} */
+
+
+/* .transformado:hover{
+    transform: scale(1.5);
+    border-radius: 4px;
+} */

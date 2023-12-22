@@ -1,0 +1,32 @@
+
+/* Para Tablets */
+@media screen and (max-width: 800px){
+    .navbar{
+        height: 40px;
+    }
+    .frutas__imagen{
+        width: 100%;
+        object-fit: none;
+    }
+    .footer{
+        background-color: var(--colour-three);
+    }
+    .paralax{        
+        height: 40vh;        
+    }
+}
+
+/* Para Celulares */
+@media screen and (max-width: 468px){
+    .container__frutas{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .frutas{
+        width: 100%;
+    }
+    .footer{
+        text-align: center;
+        font-size: 12px;        
+    }
+}

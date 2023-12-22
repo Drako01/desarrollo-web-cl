@@ -1,0 +1,44 @@
+@keyframes una_animacion{
+    from {
+        background-color: var(--colour-one); 
+    }
+    to {
+        transform: scale(1.5);
+        border-radius: 4px;
+    }
+}
+
+.transformado{
+    animation-name: una_animacion;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes una_animacion_titulo{
+    0%{
+        color: var(--colour-one);
+        font-size: 18px;
+    }
+    25%{
+        color: var(--colour-two);
+        font-size: 30px;
+    }
+    50%{
+        color: var(--colour-three);
+        font-size: 35px;
+    }
+    100%{
+        color: var(--colour-four);
+    }
+}
+
+.titulo__transformado{
+    text-align: center;
+    margin: 2rem 0;
+    animation-name: una_animacion_titulo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}

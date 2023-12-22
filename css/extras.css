@@ -1,0 +1,88 @@
+
+.parrafo {
+    width: calc(var(--small) + 30px);
+    height: calc(var(--small) - 20px);
+    background-color: var(--colour-four);
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.padre {
+    background-color: var(--colour-four);
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.hijo {
+    background-color: var(--colour-two);
+    height: 50px;
+    width: 50px;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.hijo img {
+    height: 50px;
+    width: 50px;
+}
+
+.hijo {
+    background-color: var(--colour-one);
+}
+
+#primer-hijo {
+    background-color: rgb(174, 174, 242);
+}
+
+
+
+.enlaces {
+    margin: var(--small);
+}
+
+.enlaces p {
+    color: var(--colour-one);
+}
+
+.enlaces a {
+    color: var(--colour-one);
+    text-decoration: none;
+}
+
+/* .imagen-back{
+    background-color: var(--colour-three);
+    background-image: url("https://avatars.githubusercontent.com/u/88512335?v=4"); 
+    background-repeat: repeat;   
+    background-size: cover;
+    height: 520px;
+    width: 400px;
+} */
+
+.imagen-back p {
+    color: var(--colour-one);
+    padding: .5rem;
+    line-height: 1.6rem;
+}
+
+/* BEM */
+
+
+
+.titulo {    
+    height: 100px;   
+    margin-top: 160px;
+}
+
+.titulo__h1{    
+    font-family: var(--font-two);
+    font-size: calc(var(--medium-rem)/3);
+    color: var(--colour-two);
+}

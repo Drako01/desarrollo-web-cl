@@ -1,0 +1,55 @@
+:root {
+    /* Formato de Fuentes */
+    --font-one: "Roboto";
+    --font-two: "Serif";
+    /* Formato de Colores */
+    --colour-one: #0000ff;
+    --colour-two: brown;
+    --colour-three: bisque;
+    --colour-four: aqua;
+    --colour-five: #bcc1e3;
+    /* Formato de Tamaños */
+    --small: 50px;
+    --medium: 240px;
+    --large: 400px;
+    --small-rem: 2rem;
+    --medium-rem: 5rem;
+    --large-rem: 10rem;
+}
+
+* {
+    font-family: var(--font-one);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    color: var(--colour-one);
+}
+
+ol,
+ul {
+    margin: var(--small);
+}
+
+ol li {
+    font-family: var(--font-two);
+}
+
+ol li p {
+    color: var(--colour-one);
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li p {
+    color: var(--colour-two);
+    line-height: 2rem;
+}

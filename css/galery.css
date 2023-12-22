@@ -1,0 +1,22 @@
+.container__frutas{
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;   
+}
+
+/* Si usamos % usamos medidas Relativas */
+.frutas{
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.frutas__imagen{
+    /* width: 100%; */
+    height: 600px;
+    object-fit: cover;
+}
